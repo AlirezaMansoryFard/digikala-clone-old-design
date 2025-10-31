@@ -1,0 +1,24 @@
+.slider {
+  max-height: 40rem;
+  &__pic {
+    @include responsive(tabletL) {
+      min-height: 28rem;
+      object-fit: cover;
+      cursor: grab;
+    }
+  }
+  &__pagination {
+    position: absolute;
+    bottom: 3rem;
+  }
+  &__navigation {
+    position: absolute;
+    right: 5rem;
+    bottom: 1rem;
+    width: 11rem;
+    height: 8rem;
+    @include responsive(tablet) {
+      display: none;
+    }
+  }
+}

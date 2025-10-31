@@ -1,0 +1,21 @@
+.brands {
+  &__img {
+    max-width: 5rem;
+    @include responsive(tablet) {
+      max-width: 8rem;
+    }
+  }
+  &__circle {
+    height: 4rem;
+    width: 4rem;
+    @include responsive(tablet) {
+      height: 8rem;
+      width: 8rem;
+    }
+    & > span {
+      @include responsive(tablet) {
+        font-size: 3rem;
+      }
+    }
+  }
+}

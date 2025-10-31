@@ -1,0 +1,19 @@
+.story {
+  cursor: grab;
+  &__item {
+    width: 9rem;
+    height: 9rem;
+    @include responsive(phoneL) {
+      width: 10.5rem;
+      height: 10.5rem;
+    }
+    @include responsive(phone) {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  }
+  &__text {
+    max-width: 10rem;
+    @include lineBreak();
+  }
+}

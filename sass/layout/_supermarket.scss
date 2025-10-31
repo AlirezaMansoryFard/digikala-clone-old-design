@@ -1,0 +1,17 @@
+.supermarket {
+  &__content {
+    &-left-item {
+      @include responsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-item {
+      width: 8rem;
+      height: 8rem;
+      &-pill {
+        width: 16rem;
+        height: 6rem;
+      }
+    }
+  }
+}

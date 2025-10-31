@@ -1,0 +1,43 @@
+.header {
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.3);
+  &__banner {
+    @include responsive(tablet) {
+      min-height: 6rem;
+      object-fit: cover;
+    }
+  }
+  &__search {
+    &-box {
+      @include responsive(tablet) {
+        width: 100% !important;
+      }
+    }
+
+    &-input {
+      width: 35vw;
+      @include responsive(tablet) {
+        width: 100% !important;
+        padding: 2.25rem !important;
+      }
+      outline: none;
+    }
+    &-line {
+      width: 0.2rem;
+      height: 2.5rem;
+      background-color: $text;
+    }
+  }
+  &__navbar {
+    @include responsive(bigDesktop) {
+      @include cenerizeTag(center, space-between);
+    }
+    @include responsive(tabletL) {
+      justify-content: center;
+    }
+    @include responsive(tablet) {
+      display: none;
+    }
+    &-items {
+    }
+  }
+}

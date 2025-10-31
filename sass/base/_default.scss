@@ -1,0 +1,39 @@
+* {
+  direction: rtl;
+}
+
+html {
+  font-size: 62.5%;
+  @include responsive(tabletL) {
+    font-size: 51.25%;
+  }
+  @include responsive(tablet) {
+    font-size: 55%;
+  }
+  @include responsive(phoneL) {
+    font-size: 50%;
+  }
+  @include responsive(phone) {
+    font-size: 43.75%;
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bs-body-bg: #fff;
+}
+
+body {
+  --bs-body-font-size: 1.6rem;
+  --bs-body-color: #101010;
+  --bs-body-font-family: IranSansWeb, "sans-serif";
+}

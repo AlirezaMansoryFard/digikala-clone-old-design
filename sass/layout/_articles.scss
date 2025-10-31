@@ -1,0 +1,9 @@
+.articles {
+  &__content {
+    &-item {
+      // @include responsive(phoneL) {
+      //   width: 50%;
+      // }
+    }
+  }
+}

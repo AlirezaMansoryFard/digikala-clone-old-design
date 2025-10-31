@@ -1,0 +1,18 @@
+.suggest {
+  &__content {
+    @include responsive(tablet) {
+      cursor: grab;
+    }
+    &-items {
+      min-width: 16rem;
+    }
+  }
+  &__circle {
+    width: 9rem;
+    height: 9rem;
+    background-color: $search;
+    padding: 1.3rem;
+    border-radius: 100%;
+    margin-bottom: 0.7rem;
+  }
+}

@@ -1,0 +1,73 @@
+@mixin cenerizeTag($alignItems: center, $justifyContent: center) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin positionCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin lineBreak($line: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*
+! 0 - 576px = Phone Portrait
+* 576 - 768 px = Phone Landscape
+! 768 - 992 px = Tablet Portrait
+* 992 - 1200 px = Tablet Landscape
+! 1200 - 1800 px = Laptop
+* 1800 > infinity = Big Desktop
+*/
+
+@mixin responsive($breakpoint) {
+  //! Phone BreakPoints
+  // Portrait ----- 576 px ~ 112.5 em
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 36em) {
+      @content;
+    }
+  }
+  // Landscape ----- 768 px ~ 112.5 em
+  @if $breakpoint == phoneL {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  //! Tablet BreakPoints
+  // Portrait ----- 992 px ~ 62 em
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 62em) {
+      @content;
+    }
+  }
+
+  // Landscape ----- 1200 px ~ 75 em
+  @if $breakpoint == tabletL {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  //! Laptop BreakPoint ----- 1800 px ~ 112.5 em
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    }
+  }
+
+  //! Big Desktop BreakPoint ----- 1800 px ~ 112.5 em
+  @if $breakpoint == bigDesktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

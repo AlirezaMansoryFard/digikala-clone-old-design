@@ -1,0 +1,16 @@
+.amazing {
+  &__content {
+    cursor: grab;
+    @include responsive(tablet) {
+      border-radius: 0 !important;
+    }
+    &-slider {
+      width: 18rem !important;
+      height: 27rem !important;
+      margin-left: 0.3rem;
+    }
+    &-progress {
+      height: 0.5rem;
+    }
+  }
+}

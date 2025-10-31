@@ -1,0 +1,30 @@
+.footer {
+  @include responsive(tablet) {
+    display: none !important;
+  }
+  &__content {
+    &-input-email {
+      outline: none;
+    }
+    &-app {
+      &-logo {
+        width: 5rem;
+      }
+      &-item {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+    &-info {
+      max-height: 14rem;
+      line-height: 3rem;
+    }
+    &-extra {
+      bottom: -2.7rem;
+    }
+    &-trust {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}

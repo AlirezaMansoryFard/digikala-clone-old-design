@@ -1,0 +1,19 @@
+.bestview {
+  &__content {
+    @include responsive(tablet) {
+      border: none !important;
+    }
+    &-img {
+      @include responsive(tablet) {
+        width: 60% !important;
+      }
+    }
+    &-items {
+      &--border {
+        @include responsive(tablet) {
+          border: none !important;
+        }
+      }
+    }
+  }
+}

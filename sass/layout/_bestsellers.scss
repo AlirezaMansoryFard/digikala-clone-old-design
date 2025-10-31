@@ -1,0 +1,18 @@
+.bestsellers {
+  &__content {
+    @include responsive(tablet) {
+      border: none !important;
+    }
+    &-more {
+      @include responsive(tablet) {
+        position: static !important;
+      }
+    }
+  }
+  &__slider {
+    cursor: grab;
+    &-item {
+      min-width: 40rem;
+    }
+  }
+}
