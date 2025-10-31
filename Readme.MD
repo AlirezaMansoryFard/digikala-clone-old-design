@@ -1,8 +1,8 @@
-[EN] [🇺🇸]
+[EN] 🇺🇸
 
 # Digikala Clone (Old Design)
 
-A fully responsive frontend clone of the **old Digikala website**, built with **HTML**, **CSS**, and **Sass (SCSS)** and **Bootstrap**.  
+A fully responsive frontend clone of the **old Digikala website**, built with **HTML**, **CSS**, and **Sass (SCSS)**.  
 This project focuses on **clean structure, responsive design**, and a **modern development workflow**, inspired by one of the biggest Iranian e-commerce platforms.
 
 🔗 **Live Demo:** [View Here](https://digikalacloneold.netlify.app/)
@@ -68,7 +68,7 @@ npm run build:css
 npm start
 ```
 
-[DE] [🇩🇪]
+[DE] 🇩🇪
 
 # Digikala Klon (Altes Design)
 
