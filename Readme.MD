@@ -5,7 +5,7 @@
 A fully responsive frontend clone of the **old Digikala website**, built with **HTML**, **CSS**, and **Sass (SCSS)** and **Bootstrap**.  
 This project focuses on **clean structure, responsive design**, and a **modern development workflow**, inspired by one of the biggest Iranian e-commerce platforms.
 
-🔗 **Live Demo:** [View Here](https://your-demo-link.com)
+🔗 **Live Demo:** [View Here](https://digikalacloneold.netlify.app/)
 
 ---
 
@@ -75,7 +75,7 @@ npm start
 Ein vollständig responsives Frontend-Klon des **alten Digikala-Webdesigns**, entwickelt mit **HTML**, **CSS** und **Sass (SCSS)** und **Bootstrap**.  
 Dieses Projekt konzentriert sich auf **saubere Struktur**, **responsive Gestaltung** und einen **modernen Entwicklungs-Workflow**, inspiriert von einer der größten iranischen E-Commerce-Plattformen.
 
-🔗 **Live Demo:** [Hier ansehen](https://your-demo-link.com)
+🔗 **Live Demo:** [Hier ansehen](https://digikalacloneold.netlify.app/)
 
 ---
 
